@@ -1,4 +1,8 @@
-/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+/*  
+
+https://github.com/lee77carter/coding-responsive-rogue-pickings-01-starter-code/blob/main/css/main.css
+
+! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
@@ -84,6 +88,79 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/******** GLOBAL STYLES ********/
+html {
+	font-size: 16px;
+  color: #ffffff;
+  background-image: url("./img/background-image");
+  background-color: #000000;
+  padding: 20px 20px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: .9em;
+}
+
+.flex-container {
+  max-width: 1200px;
+	width: 90%;	
+	display: flex;
+	justify-content: none;
+	flex-flow: row wrap;
+}
+
+/******** HEADER STYLES ********/
+/* The widths are in a percentage! */
+header {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+a {
+	font-size: 1rem;
+	line-height: 36px;
+}
+
+img {
+  width: 200px;
+}
+
+ul li {
+	list-style-type: none; /* removed bullets */
+}
+
+/********  MAIN STYLES ********/
+/******** TOP SECTION ********/
+.flex-container {
+  text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+/******** BOTTOM SECTION ********/
+footer {
+	margin-top: 8px;
+  text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+a:link, a:visited {
+  background-color: #f15f0a;
+  color: #000000;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(211, 217, 37);
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -166,15 +243,30 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media (min-width: 768px) {
+
+  /* This code sets the background to blue on ALL browsers that are larger than 1200px*/
+  body {
+    background: blue;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  /* This code sets the background to blue on ALL browsers that are larger than 1200px*/
+  body {
+    background: blue;
+  }
+}
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -185,6 +277,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -244,4 +337,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
