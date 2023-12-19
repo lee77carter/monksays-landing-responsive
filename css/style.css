@@ -1,4 +1,8 @@
-/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+/*  
+
+https://github.com/lee77carter/coding-responsive-rogue-pickings-01-starter-code/blob/main/css/main.css
+
+! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
@@ -84,20 +88,127 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* ==========================================================================
+/******** GLOBAL STYLES ********/
+html {
+  font-size: 16px;
+  padding: 20px 20px;
+  background-image: url("../img/background.jpeg");
+  background-size: cover;
+  /* set height to 100% - these are important for allowing content to vertically align */
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-size: .9em;
+  color: #fff;
+  /* set height to 100% - these are important for allowing content to vertically align */
+  height: 100%;
+}
+
+/******** HEADER STYLES ********/
+/* The widths are in a percentage! */
+header {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 23px 18px 0;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 70%;
+}
+
+a {
+  font-size: 1rem;
+  line-height: 36px;
+}
+
+ul li {
+  font-family: 'Inter', sans-serif;
+  list-style-type: none;
+  /* removed bullets */
+}
+
+/********  MAIN STYLES ********/
+/******** TOP SECTION ********/
+.flex-container {}
+
+.mini-flex-container {
+  text-align: center;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 4px 51px 0 0;
+}
+
+#div-1.flex-items {
+  padding: 40px 47px 35px 44px;
+}
+
+#div-2.flex-items {
+  padding: 0 0 53px 4px;
+}
+
+/******** BOTTOM SECTION ********/
+footer {
+  margin-top: 8px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 36px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Optional: adjust alignment as needed */
+
+  .button,
+  .button:active {
+    padding: 13px 13px 13px 13px;
+    background-color: #f15f0a;
+    color: #000;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: rgb(211, 217, 37);
+    color: #000;
+  }
+
+  /* ==========================================================================
    Helper classes
    ========================================================================== */
 
-/*
+  /*
  * Hide visually and from screen readers
  */
 
-.hidden,
-[hidden] {
-  display: none !important;
-}
+  .hidden,
+  [hidden] {
+    display: none !important;
+  }
 
-/*
+  /*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  *
@@ -106,142 +217,157 @@ textarea {
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
 
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
+  .visually-hidden {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+  }
 
-/*
+  /*
  * Extends the .visually-hidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
 
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
+  .visually-hidden.focusable:active,
+  .visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
 
-/*
+  /*
  * Hide visually and from screen readers, but maintain layout
  */
 
-.invisible {
-  visibility: hidden;
-}
+  .invisible {
+    visibility: hidden;
+  }
 
-/*
+  /*
  * Clearfix: contain floats
  *
  * The use of `table` rather than `block` is only necessary if using
  * `::before` to contain the top-margins of child elements.
  */
 
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
-}
+  .clearfix::before,
+  .clearfix::after {
+    content: "";
+    display: table;
+  }
 
-.clearfix::after {
-  clear: both;
-}
+  .clearfix::after {
+    clear: both;
+  }
 
-/* ==========================================================================
+  /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+  @media (min-width: 768px) {
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+    /* This code sets the background to blue on ALL browsers that are larger than 717px*/
+    body {
+      background-color: #0e3a18;
+    }
+  }
 
-@media print,
+  @media (min-width: 1200px) {
+
+    /* This code sets the background to blue on ALL browsers that are larger than 1200px*/
+    body {
+      background-color: blue;
+    }
+  }
+
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+
+  @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+    /* Style adjustments for high resolution devices */
+  }
 
-/* ==========================================================================
+  /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+  @media print {
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
 
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
 
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
 
-  /*
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+
+    /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
 
-  pre {
-    white-space: pre-wrap !important;
-  }
+    pre {
+      white-space: pre-wrap !important;
+    }
 
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
 
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
 
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
 
-  h2,
-  h3 {
-    page-break-after: avoid;
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
   }
-}
-

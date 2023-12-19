@@ -1,11 +1,18 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+
+  <title>Monk says...</title>
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    function monksSurvey() {
+      // Change the URL to your survey link
+      window.location.href = "https://www.surveymonkey.com";
+    }
+  </script>
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -17,45 +24,53 @@
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 </head>
-
-
-</body>
-
-<header className="App-header">
-  <img src="real-bball.png" className="App-logo" alt="logo" />
-  <h2>
-    Monk's Teachings on Financial Literacy
-  </h2>
+<header classname="App-header">
+  <img src="./img/test-image.jpeg" alt="logo" />
 </header>
-<main>
+
+<body>
   <section class="flex-container">
-    <div id="div-1" class="flex-items">
-      <ul>
-        <li>Taking a loss</li>
-        <li>Taxes</li>
-        <li>Building your own team</li>
-        <li>You assign a coach</li>
-        <li>Scouting for players</li>
-      </ul>
-    </div>
-    <div id="div-2" class="flex-items">
-      <ul>
-        <li>The warmup</li>
-        <li>Practice session</li>
-        <li>Building your own arena</li>
-        <li>Understanding your 401(k)/Pension</li>
-        <li>Generational wealth</li>
-      </ul>
-    </div>
+    <h1>Monk's Teachings on Financial Literacy</h1>
+    <section class="mini-flex-container">
+      <!-- child container-->
+      <div id="div-1" class="flex-items">
+        <ul>
+          <li>Taking a loss</li>
+          <li>Taxes</li>
+          <li>Building your own team</li>
+          <li>You assign a coach</li>
+          <li>Scouting for players</li>
+        </ul>
+      </div>
+      <div id="div-2" class="flex-items">
+        <ul>
+          <li>The warmup</li>
+          <li>Practice session</li>
+          <li>Building your own arena</li>
+          <li>Understanding your 401(k)/Pension</li>
+          <li>Generational wealth</li>
+        </ul>
+      </div>
+    </section>
   </section>
-</main>
+</body>
 <footer>
-  <a className="App-link" href="https://Survey Monkey" target="_blank" rel="noopener noreferrer">
-    Click the link to give me your feedback
-  </a>
+  <div class="button-container">
+    <h3 class="text">Your Feedback is greatly appreciated</h3>
+    <!-- Button-like link -->
+    <button class="button" onclick="monksSurvey()"><strong>SURVEY</strong></button>
   </div>
 </footer>
 
