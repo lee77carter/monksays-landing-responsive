@@ -1,7 +1,4 @@
 /*  
-
-https://github.com/lee77carter/coding-responsive-rogue-pickings-01-starter-code/blob/main/css/main.css
-
 ! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
@@ -15,11 +12,11 @@ https://github.com/lee77carter/coding-responsive-rogue-pickings-01-starter-code/
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
+/* html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-}
+} */
 
 /*
  * Remove text-shadow in selection highlight:
@@ -28,7 +25,7 @@ html {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
+/* ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
@@ -36,7 +33,7 @@ html {
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
-}
+} */
 
 /*
  * A better looking default horizontal rule
@@ -92,18 +89,16 @@ textarea {
 html {
   font-size: 16px;
   padding: 20px 20px;
-  background-image: url("../img/background.jpeg");
-  background-size: cover;
   /* set height to 100% - these are important for allowing content to vertically align */
   height: 100%;
 }
 
 body {
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  background-image: url('../img/background.jpeg');
+  background-size: cover;
   font-size: .9em;
   color: #fff;
-  /* set height to 100% - these are important for allowing content to vertically align */
-  height: 100%;
 }
 
 /******** HEADER STYLES ********/
@@ -178,6 +173,7 @@ footer {
   flex-direction: column;
   align-items: center;
   /* Optional: adjust alignment as needed */
+}
 
   .button,
   .button:active {
@@ -277,25 +273,21 @@ footer {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-  @media (min-width: 768px) {
+    
 
-    /* This code sets the background to blue on ALL browsers that are larger than 717px*/
+   @media only screen and (min-width: 666px) {
     body {
-      background-color: #0e3a18;
+      background: slategrey;    
     }
   }
 
-  @media (min-width: 1200px) {
-
-    /* This code sets the background to blue on ALL browsers that are larger than 1200px*/
-    body {
-      background-color: blue;
-    }
+  @media only screen and (min-width: 1200px) {
+      /** Desktops **/
+      body {background-color: #008b8b;}
   }
 
-  @media only screen and (min-width: 35em) {
+  /* @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
-  }
 
   @media print,
   (-webkit-min-device-pixel-ratio: 1.25),

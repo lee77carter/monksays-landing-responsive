@@ -6,13 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Monk says...</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script>
-    function monksSurvey() {
-      // Change the URL to your survey link
-      window.location.href = "https://www.surveymonkey.com";
-    }
-  </script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -36,14 +31,14 @@
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 </head>
-<header classname="App-header">
-  <img src="./img/test-image.jpeg" alt="logo" />
-</header>
 
 <body>
-  <section class="flex-container">
+  <header class="App-header">
+    <img src="./img/test-image.jpeg" alt="logo">
+  </header>
+  <div class="flex-container">
     <h1>Monk's Teachings on Financial Literacy</h1>
-    <section class="mini-flex-container">
+    <div class="mini-flex-container">
       <!-- child container-->
       <div id="div-1" class="flex-items">
         <ul>
@@ -63,15 +58,15 @@
           <li>Generational wealth</li>
         </ul>
       </div>
-    </section>
-  </section>
-</body>
-<footer>
-  <div class="button-container">
-    <h3 class="text">Your Feedback is greatly appreciated</h3>
-    <!-- Button-like link -->
-    <button class="button" onclick="monksSurvey()"><strong>SURVEY</strong></button>
+    </div>
   </div>
-</footer>
+  <footer>
+    <div class="button-container">
+      <h3>Your Feedback is greatly appreciated</h3>
+      <!-- Survey -->
+      <button class="button" onclick="window.open('https://www.survey.com', '_blank')"><strong>SURVEY</strong></button>
+    </div>
+  </footer>
+</body>
 
 </html>
