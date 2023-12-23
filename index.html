@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Monk says...</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -15,8 +16,6 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
   <!-- Google Fonts -->
@@ -33,40 +32,36 @@
 </head>
 
 <body>
-  <header class="App-header">
-    <img src="./img/test-image.jpeg" alt="logo">
-  </header>
-  <div class="flex-container">
-    <h1>Monk's Teachings on Financial Literacy</h1>
-    <div class="mini-flex-container">
-      <!-- child container-->
-      <div id="div-1" class="flex-items">
-        <ul>
-          <li>Taking a loss</li>
-          <li>Taxes</li>
-          <li>Building your own team</li>
-          <li>You assign a coach</li>
-          <li>Scouting for players</li>
-        </ul>
-      </div>
-      <div id="div-2" class="flex-items">
-        <ul>
-          <li>The warmup</li>
-          <li>Practice session</li>
-          <li>Building your own arena</li>
-          <li>Understanding your 401(k)/Pension</li>
-          <li>Generational wealth</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <footer>
-    <div class="button-container">
-      <h3>Your Feedback is greatly appreciated</h3>
-      <!-- Survey -->
-      <button class="button" onclick="window.open('https://www.survey.com', '_blank')"><strong>SURVEY</strong></button>
-    </div>
-  </footer>
-</body>
 
+  <header>
+    <img src="./img/test-image.jpeg" alt="logo">
+    <h1>Monk's Teachings on Financial Literacy</h1>
+  </header>
+
+  <main>
+    <div class="column">
+      <h2>Session 1</h2>
+      <p>Taking a loss</p>
+      <p>Taxes</p>
+		  <p>You assign a coach</p>
+      <p>Scouting for players</p>
+    </div>
+
+    <div class="column">
+      <h2>Session 2</h2>
+     <p>The warmup</p>
+     <p>Practice session</p>
+     <p>Building your own arena</p>
+    <p>Understanding your 401(k)/Pension</p>
+    <p>Generational wealth</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Your Feedback is greatly appreciated</p>
+    <a href="https://www.survey.com" target="_blank" class="survey-button"><strong>SURVEY</strong></a>
+  </footer>
+
+</body>
 </html>
+
