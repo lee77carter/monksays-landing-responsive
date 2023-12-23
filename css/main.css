@@ -115,6 +115,7 @@ main {
   justify-content: center;
   align-items: stretch;
   margin: 20px;
+  font-size: 28px;
 }
 
 .column {
@@ -250,13 +251,12 @@ footer {
    ========================================================================== */
 
 /** Tablets **/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 
   main {
     flex-direction: column;
     align-items: center;
     padding: 72px 83px 83px 62px;
-    font-size: 20px;
   }
 
   .column {
@@ -272,7 +272,6 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 72px 113px 86px 50px;
-    font-size: 28px;
   }
 
   .column {
