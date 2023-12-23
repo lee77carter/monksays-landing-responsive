@@ -39,7 +39,7 @@
  * A better looking default horizontal rule
  */
 
- hr {
+hr {
   display: block;
   height: 1px;
   border: 0;
@@ -102,8 +102,10 @@ header {
 }
 
 header img {
-  width: 100px; /* Adjust the size of the basketball */
-  border-radius: 50%; /* Make it circular */
+  width: 100px;
+  /* Adjust the size of the basketball */
+  border-radius: 50%;
+  /* Make it circular */
 }
 
 /********  MAIN STYLES ********/
@@ -123,6 +125,7 @@ main {
   background-color: #000;
   text-align: center;
 }
+
 /******** BOTTOM SECTION ********/
 footer {
   text-align: center;
@@ -143,8 +146,8 @@ footer {
 }
 
 .survey-button:hover {
- background-color: rgb(211, 217, 37);
- color: #000;
+  background-color: rgb(211, 217, 37);
+  color: #000;
 }
 
 .button,
@@ -247,20 +250,30 @@ footer {
    ========================================================================== */
 
 
-   @media screen and (max-width: 768px) {
-    main {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .column {
-      width: 100%;
-      margin: 10px 0;
-    }
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
   }
 
+  .column {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
+
   /** Desktops **/
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    width: 100%;
+    margin: 10px 0;
+  }
 
 }
 
