@@ -132,12 +132,14 @@ footer {
 }
 
 .survey-button {
+  font-family: Arial, Helvetica, sans-serif;
   display: inline-block;
   padding: 10px 20px;
   border-radius: 50%;
-  background-color: #ff6600;
+  background-color: #7caeea;
   color: #000;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .survey-button:hover {
@@ -285,7 +287,7 @@ footer {
   *,
   *::before,
   *::after {
-    background: #fff !important;
+    background: #4b81c3 !important;
     color: #000 !important;
     /* Black prints faster */
     box-shadow: none !important;
