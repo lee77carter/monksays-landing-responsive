@@ -135,6 +135,11 @@ footer {
   color: #fff;
 }
 
+.copyright {
+  font-size: 12px;
+  padding: 30px;
+}
+
 .survey-button {
   font-family: Arial, Helvetica, sans-serif;
   display: inline-block;
