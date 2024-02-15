@@ -1,3 +1,3 @@
 # Monksays
 
-Landing page for Monksays financial presentation. 
+Monksays Financial Presentation Landing Page.
