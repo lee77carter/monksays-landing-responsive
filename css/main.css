@@ -149,6 +149,7 @@ img {
 /******** BOTTOM SECTION ********/
 footer {
   font-family: none;
+  font-size: 2em;
   text-align: center;
   padding: 20px;
   color: #000;
@@ -288,6 +289,9 @@ footer {
     width: 100%;
     margin: 10px 0;
   }
+
+  .survey-button {
+    width: 64px;  
 }
 
 @media only screen and (min-width: 1200px) {
@@ -303,6 +307,7 @@ footer {
     width: 100%;
     margin: 10px 0;
   }
+}
 
 }
 
