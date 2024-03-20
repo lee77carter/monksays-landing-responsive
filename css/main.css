@@ -88,7 +88,6 @@ textarea {
 /******** GLOBAL STYLES ********/
 body {
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  background-image: url('../img/background.jpeg');
   background-size: cover;
   color: #fff;
 }
@@ -98,7 +97,6 @@ body {
 header {
   text-align: center;
   padding: 20px;
-  background-color: black;
 }
 
 header img {
@@ -106,6 +104,18 @@ header img {
   /* Adjust the size of the basketball */
   border-radius: 50%;
   /* Make it circular */
+}
+
+header,
+.column {
+  background-image: url('../img/background.jpeg');
+}
+
+h2,
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+  color: #000;
+  text-align: center;
 }
 
 /********  MAIN STYLES ********/
@@ -118,26 +128,36 @@ main {
   font-size: 28px;
 }
 
+img {
+  width: 100%
+}
+
+.column-icons {
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+
 .column {
   flex: 1;
   border: 1px solid #000;
-  padding: 20px;
   margin: 10px;
-  background-color: #000;
   text-align: center;
 }
 
 /******** BOTTOM SECTION ********/
 footer {
+  font-family: none;
   text-align: center;
   padding: 20px;
-  background-color: #000;
-  color: #fff;
+  color: #000;
 }
 
 .copyright {
   font-size: 12px;
   padding: 30px;
+  font-family: none;
 }
 
 .survey-button {
@@ -145,14 +165,15 @@ footer {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 50%;
-  background-color: #7caeea;
+  background-color: #48b444;
   color: #000;
   text-decoration: none;
   font-weight: bold;
+  width: 20%;
 }
 
 .survey-button:hover {
-  background-color: rgb(211, 217, 37);
+  background-color: rgb(176, 230, 69);
   color: #000;
 }
 
@@ -261,7 +282,6 @@ footer {
   main {
     flex-direction: column;
     align-items: center;
-    padding: 72px 83px 83px 62px;
   }
 
   .column {
