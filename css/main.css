@@ -89,7 +89,7 @@ textarea {
 body {
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   background-size: cover;
-  color: #fff;
+  color: #000;
 }
 
 /******** HEADER STYLES ********/
@@ -108,7 +108,7 @@ header img {
 
 header,
 .column {
-  background-image: url('../img/background.jpeg');
+  background: #ed7d3c
 }
 
 h2,
@@ -215,8 +215,8 @@ footer {
 }
 
 #topBtn {
-  background-color: #f08446;
-  color: #152A3E;
+  background-color: #24456f;
+  color: #f08446;
   font-weight: bolder;
   cursor: pointer;
   cursor: pointer;
