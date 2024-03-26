@@ -152,7 +152,7 @@ img {
 }
 
 .quote {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   font-size: 14px;
   padding: 13px;
@@ -335,9 +335,20 @@ footer {
 /** Tablets **/
 @media screen and (max-width: 769px) {
 
+  /******** HEADER STYLES ********
+  h2,
+  h3 {
+    padding: 0 5px 0 55px;
+  }
+
+  /******** MAIN STYLES ********/
   main {
     flex-direction: column;
     align-items: center;
+  }
+
+  img {
+    width: 60%
   }
 
   .column {
@@ -349,21 +360,56 @@ footer {
     width: 64px;
   }
 
-  @media only screen and (min-width: 1200px) {
+  /******** BOTTOM SECTION ********/
+}
 
-    /** Desktops **/
-    main {
-      flex-direction: column;
-      align-items: center;
-      padding: 72px 113px 86px 50px;
-    }
+/** Tablets #2 **/
+@media only screen and (min-width: 770px) {
 
-    .column {
-      width: 100%;
-      margin: 10px 0;
-    }
+  /******** HEADER STYLES ********/
+  h2,
+  h3 {
+    padding: 0 5px 0 55px;
   }
 
+  /******** MAIN STYLES ********/
+  .survey-button {
+    width: 10%;
+  }
+
+  img {
+    width: 60%
+  }
+
+  /******** BOTTOM SECTION ********/
+}
+
+/** Desktops **/
+@media only screen and (min-width: 1200px) {
+
+  /******** HEADER STYLES ********/
+  header {
+    background-color: rgb(231, 52, 82);
+  }
+
+  h2,
+  h3 {
+    padding: 0 5px 0 55px;
+  }
+
+  /******** MAIN STYLES ********/
+  main {
+    flex-direction: column;
+    align-items: center;
+    padding: 72px 113px 86px 50px;
+  }
+
+  .column {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /******** BOTTOM SECTION ********/
 }
 
 /* @media only screen and (min-width: 35em) {
