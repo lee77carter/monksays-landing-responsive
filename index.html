@@ -8,6 +8,7 @@
   <title>Monk says...</title>
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/normalize.css">
+  <script defer src="js/script.js"></script>
 
   <meta name="description" content="">
 
@@ -15,6 +16,7 @@
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
+  <meta name="theme-color" content="#fafafa">
 
   <link rel="apple-touch-icon" href="icon.png">
 
@@ -48,7 +50,7 @@
       <div class="icons">
         <img src="./img/banner.png" alt="Time">
 
-    </div>
+      </div>
     </div>
     <h2>Monk says... this is how you play the game</h2>
     <div class="column">
@@ -64,21 +66,27 @@
       <p>Generational wealth</p>
     </div>
   </main>
-
-  <footer>
-    <blockquote>
-      <div class="blockquote-footer">Monk Says...The Game is out there. It's either play or get played. 
-        <cite title="Source Title"> 
-          <br> - Omar, The Wire</cite>
-      </div>
-    </blockquote>
-    <br>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBiPrSYs_lAhMlIkbXXh7FmVMlKMjzijRtU29tv6Cx3FnZ5A/viewform"
-      target="_blank" class="survey-button"><strong>Q&A</strong></a>
-
-    <div class="copyright">
-      <p>Copyright 2023-2024 | Monksays</p>
+  <blockquote>
+    <div class="quote">Monk Says...The Game is out there. It's either play or get played.
+      <cite title="Source Title">
+        <br> - Omar, The Wire</cite>
     </div>
+  </blockquote>
+  <footer>
+    <div class="click-btns">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBiPrSYs_lAhMlIkbXXh7FmVMlKMjzijRtU29tv6Cx3FnZ5A/viewform"
+        target="_blank" class="survey-button" ><strong>Q&A</strong>
+      </a>
+      <a href="mailto:whatmonksays@gmail.com" rel="noopener" target="_blank" class="email-btn"><img
+          src="img/email-btn.png" alt="Email Button">
+      </a>
+    </div>
+    <div class="top-button">
+      <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    </div>
+    <p class="copyright">Copyright
+      <script>document.write(new Date().getFullYear())</script> | Monksays
+    </p>
   </footer>
 
 </body>
