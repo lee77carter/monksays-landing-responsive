@@ -335,7 +335,7 @@ footer {
 /** Tablets **/
 @media screen and (max-width: 769px) {
 
-  /******** HEADER STYLES ********
+  /******** HEADER STYLES ********/
   h2,
   h3 {
     padding: 0 5px 0 55px;
