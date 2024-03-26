@@ -119,6 +119,10 @@ h3 {
 }
 
 /********  MAIN STYLES ********/
+p {
+  font-weight: bold;
+}
+
 /******** TOP SECTION ********/
 main {
   display: flex;
@@ -146,6 +150,10 @@ img {
   text-align: center;
 }
 
+.quote {
+  text-align: center;
+}
+
 /******** BOTTOM SECTION ********/
 footer {
   font-family: none;
@@ -163,8 +171,8 @@ footer {
 
 .click-btns {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: baseline;
+  justify-content: center;
 }
 
 .survey-button {
