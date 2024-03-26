@@ -152,7 +152,10 @@ img {
 }
 
 .quote {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
+  font-size: 14px;
+  padding: 13px;
 }
 
 /******** BOTTOM SECTION ********/
