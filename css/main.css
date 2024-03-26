@@ -113,14 +113,14 @@ header,
 
 h2,
 h3 {
-    font-family: 'Times New Roman', Times, serif;
-  color: #000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #514c4c;
   text-align: center;
 }
 
 /********  MAIN STYLES ********/
 p {
-  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /******** TOP SECTION ********/
@@ -131,8 +131,9 @@ main {
   margin: 20px;
   font-size: 28px;
 }
+
 /* Fixes the banners stretch issues */
-img { 
+img {
   width: 100%
 }
 
@@ -211,7 +212,7 @@ footer {
 .email-btn {
   display: inline-block;
   padding: 10px 20px;
-  width: 24%;
+  width: 17%;
 }
 
 .email-btn:hover {
@@ -342,23 +343,23 @@ footer {
   }
 
   .survey-button {
-    width: 64px;  
-}
-
-@media only screen and (min-width: 1200px) {
-
-  /** Desktops **/
-  main {
-    flex-direction: column;
-    align-items: center;
-    padding: 72px 113px 86px 50px;
+    width: 64px;
   }
 
-  .column {
-    width: 100%;
-    margin: 10px 0;
+  @media only screen and (min-width: 1200px) {
+
+    /** Desktops **/
+    main {
+      flex-direction: column;
+      align-items: center;
+      padding: 72px 113px 86px 50px;
+    }
+
+    .column {
+      width: 100%;
+      margin: 10px 0;
+    }
   }
-}
 
 }
 
