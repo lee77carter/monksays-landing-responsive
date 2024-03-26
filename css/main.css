@@ -171,8 +171,8 @@ footer {
 
 .click-btns {
   display: flex;
-  align-items: baseline;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .survey-button {
