@@ -116,6 +116,7 @@ h3 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #514c4c;
   text-align: center;
+  padding: 0 55px 0 55px;
 }
 
 /********  MAIN STYLES ********/
@@ -336,11 +337,6 @@ footer {
 @media screen and (max-width: 769px) {
 
   /******** HEADER STYLES ********/
-  h2,
-  h3 {
-    padding: 0 5px 0 55px;
-  }
-
   /******** MAIN STYLES ********/
   main {
     flex-direction: column;
@@ -348,7 +344,7 @@ footer {
   }
 
   img {
-    width: 60%
+    width: 100%
   }
 
   .column {
@@ -367,11 +363,6 @@ footer {
 @media only screen and (min-width: 770px) {
 
   /******** HEADER STYLES ********/
-  h2,
-  h3 {
-    padding: 0 5px 0 55px;
-  }
-
   /******** MAIN STYLES ********/
   .survey-button {
     width: 10%;
@@ -388,14 +379,6 @@ footer {
 @media only screen and (min-width: 1200px) {
 
   /******** HEADER STYLES ********/
-  header {
-    background-color: rgb(231, 52, 82);
-  }
-
-  h2,
-  h3 {
-    padding: 0 5px 0 55px;
-  }
 
   /******** MAIN STYLES ********/
   main {
