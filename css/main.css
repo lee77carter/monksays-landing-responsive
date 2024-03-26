@@ -343,10 +343,6 @@ footer {
     align-items: center;
   }
 
-  img {
-    width: 100%
-  }
-
   .column {
     width: 100%;
     margin: 10px 0;
@@ -366,10 +362,6 @@ footer {
   /******** MAIN STYLES ********/
   .survey-button {
     width: 10%;
-  }
-
-  img {
-    width: 60%
   }
 
   /******** BOTTOM SECTION ********/
