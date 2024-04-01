@@ -99,6 +99,11 @@ header {
   padding: 20px;
 }
 
+header p {
+  font-size: 2em;
+  font-family: ui-serif;
+}
+
 header img {
   width: 190px;
   /* Adjust the size of the basketball */
